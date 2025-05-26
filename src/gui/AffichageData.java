@@ -45,6 +45,7 @@ public class AffichageData extends JPanel{
         this.controle.removeAll();
         JList<String> modes = new JList<String>(listeModes);
         modes.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        modes.setSelectedIndex(0);
         modes.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         modes.addListSelectionListener(new ListSelectionListener() {
             @Override
